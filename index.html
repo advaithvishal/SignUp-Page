@@ -1,26 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Signup Page</title>
-    <link rel="stylesheet" href="./index.css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <main>
+        <div class="signup-container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <h1>Create an Account</h1>
             <form>
-                    <h1>Sign up</h1>
-                    <label class="labelText">First name</label>
-                    <input type="text" placeholder="eg., Mark">
-                    <label class="labelText">Last name</label>
-                    <input type="text" placeholder="eg., Green">
-                    <label>Email</label>
-                    <input type="email" placeholder="eg., test@upgrad.com">
-                    <label id="password">Password</label>
-                    <input type="password" placeholder="eg., xxyyzz">
-                    <label>Mobile</label>
-                    <input type="tel" placeholder="eg., 1234567890">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+                </div>
+                <button type="submit">Sign Up</button>
             </form>
-            <button class="submit-btn">Submit</button>
-    </div>
+            <div class="login">
+                <p>Already have an account? <a href="https://advaithvishal.github.io/Login-Page/">Login</a></p>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
