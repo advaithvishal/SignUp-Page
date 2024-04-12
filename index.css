@@ -1,57 +1,108 @@
-h1 {
-    text-align: center;
+/* Reset and Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #7b4397, #dc2430);
     display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    font-family: sans-serif;
+    min-height: 100vh;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 30%;
+/* Signup Container */
+.signup-container {
+    max-width: 500px; /* Reduced max-width */
+    width: 120%;
+    background-color: #F08080;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    padding: 40px; /* Reduced padding */
+    text-align: center;
 }
 
+.logo img {
+    max-width: 80px; /* Reduced logo size */
+    margin-bottom: 16px; /* Reduced margin bottom */
+    z-index: 1;
+    position: relative;
+}
+
+h1 {
+    font-size: 24px; /* Reduced font size */
+    margin-bottom: 30px; /* Reduced margin bottom */
+    color: #333;
+    z-index: 1;
+    position: relative;
+}
+
+/* Form Styles */
 form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 16px; /* Reduced gap */
+    z-index: 1;
+    position: relative;
 }
 
-.submit-btn {
-    background-color: orange;
-    color: #fff;
-    padding: 2%;
-    font-size: 22px;
-    margin-top: 10px;
-    border: 0;
-    cursor: pointer;
-}
-
-input {
-    padding: 2%;
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
 }
 
 label {
-    font-size: 20px;
-    font-weight: bolder;
-    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 6px;
 }
 
+input {
+    width: 100%;
+    padding: 10px 14px; /* Reduced padding */
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
 
-@media (max-width: 500px){
-    label {
-        color: green;
-    }
-  }
+button {
+    background: linear-gradient(45deg, #7b4397, #dc2430);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 18px; /* Reduced padding */
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
 
-  @media (min-width: 500px) and (max-width: 1000px){
-    label {
-        color: red;
-    }
-  }
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* Additional Styles */
+.login {
+    margin-top: 24px; /* Reduced margin top */
+    font-size: 14px;
+    color: #666;
+    z-index: 1;
+    position: relative;
+}
+
+.login a {
+    color: #7b4397;
+    text-decoration: none;
+    font-weight: 600;
+}
